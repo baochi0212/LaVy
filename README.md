@@ -91,12 +91,12 @@ Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi ti
     "Status": "success"
     }
     ```
-3. Start evaluation
+3. Batch Inference (Multi-gpu) 
 ```
 #OpenViVQA
-bash ./eval_scripts/test_llava.sh
+bash ./eval_scripts/test_llava.sh $file_name $model_path $model_base $output_file $NUM_GPUs 
 #in the wild
-bash ./eval_scripts/test_benchmark.sh
+bash ./eval_scripts/test_benchmark.sh $file_name $model_path $model_base $output_file $NUM_GPUs
 ```
 
 ## Citation
