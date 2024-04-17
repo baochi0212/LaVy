@@ -48,6 +48,10 @@ huggingface-cli download chitb/LaVy-instruct --local-dir ./checkpoints
 python ./llava/eval/run_llava.py --model_base path_to_Vistral7b --model_path path_to_LaVy-instruct --model_name "llava_lora" --conv_mode "mistral_instruct" --image-file "./images/006.jpg" --query "Bạn có biết ai vẽ bức tranh này?"
 ```
 
+```
+Output:
+Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi tiếng người Ý. Bức tranh nổi tiếng này mô tả một người phụ nữ với nụ cười bí ẩn, được gọi là Mona Lisa. Bức tranh được vẽ vào thế kỷ 16 và được coi là một trong những tác phẩm nghệ thuật nổi tiếng và được yêu thích nhất trên thế giới.
+```
 ### Train
 
 1. Prepare
