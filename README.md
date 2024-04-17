@@ -65,8 +65,8 @@ Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi ti
 
 
 ### Evaluation
-1. Prepare & Config
-      Benchmark can be downloaded at: [LaVy]() [OpenViVQA]() 
+1. Prepare & Config: 
+   Benchmark can be downloaded at: [LaVy](https://huggingface.co/datasets/chitb/LaVy-Bench) [OpenViVQA](https://huggingface.co/datasets/uitnlp/OpenViVQA-dataset) 
 
    Our Gemini Pro prompts for evaluation:
    OpenViVQA:
