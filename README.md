@@ -65,9 +65,10 @@ Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi ti
 
 
 ### Evaluation
-1. Prepare & Config 
-   LaVy Benchmark can be downloaded at:
-    Our Gemini Pro prompts for evaluation:
+1. Prepare & Config
+      Benchmark can be downloaded at: [LaVy]() [OpenViVQA]() 
+
+   Our Gemini Pro prompts for evaluation:
    OpenViVQA:
     ```
     {
@@ -91,7 +92,7 @@ Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi ti
     "status": "success"
     }
     ```
-2. Start evaluation
+3. Start evaluation
 ```
 #OpenViVQA
 bash ./eval_scripts/test_llava.sh
