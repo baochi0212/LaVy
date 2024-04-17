@@ -5,7 +5,6 @@
 ## Contents
 - [Install](#install)
 - [Weights](#llava-weights)
-- [Dataset](https://github.com/haotian-liu/LLaVA/blob/main/docs/Data.md)
 - [Train](#train)
 - [Evaluation](#evaluation)
 
