@@ -11,8 +11,6 @@
 
 ## Install
 
-If you are not using Linux, do *NOT* proceed, see instructions for [macOS](https://github.com/haotian-liu/LLaVA/blob/main/docs/macOS.md) and [Windows](https://github.com/haotian-liu/LLaVA/blob/main/docs/Windows.md).
-
 1. Clone this repository and navigate to LLaVA folder
 ```bash
 git clone https://github.com/baochi0212/LaVy
@@ -30,7 +28,7 @@ python3 -m pip install -e .
 ```
 #flash attention
 pip install flash-attn --no-build-isolation
-#for xformer: [Xformer install](https://github.com/facebookresearch/xformers?tab=readme-ov-file#installing-xformers)
+#for xformer: https://github.com/facebookresearch/xformers?tab=readme-ov-file#installing-xformers
 ```
 
 ## LaVy Weights
@@ -47,6 +45,7 @@ huggingface-cli download chitb/LaVy-instruct --local-dir ./checkpoints
 ```
 python ./llava/eval/run_llava.py --model_base path_to_Vistral7b --model_path path_to_LaVy-instruct --model_name "llava_lora" --conv_mode "mistral_instruct" --image-file "./images/006.jpg" --query "Bạn có biết ai vẽ bức tranh này?"
 ```
+![image](https://github.com/baochi0212/LaVy/assets/77192945/c235c99c-df45-49da-8d11-e1ba3f4441b4)
 
 ```
 Output:
