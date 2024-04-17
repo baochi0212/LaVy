@@ -42,7 +42,13 @@ huggingface-cli download chitb/LaVy-instruct --local-dir ./checkpoints
 ### Quickstart Inference 
 
 ```
-python ./llava/eval/run_llava.py --model_base path_to_Vistral-7B --model_path path_to_LaVy-Instruct --model_name "llava_lora" --conv_mode "mistral_instruct" --image-file "./images/006.jpg" --query "Bạn có biết ai vẽ bức tranh này?"
+python ./llava/eval/run_llava.py \
+   --model_base path_to_Vistral-7B \
+   --model_path path_to_LaVy-Instruct \
+   --model_name "llava_lora" \
+   --conv_mode "mistral_instruct" \
+   --image-file "./images/006.jpg" \
+   --query "Bạn có biết ai vẽ bức tranh này?"
 ```
 ![image](https://github.com/baochi0212/LaVy/assets/77192945/c235c99c-df45-49da-8d11-e1ba3f4441b4)
 
