@@ -26,14 +26,14 @@ python3 -m pip install -e .
 3. Install additional packages for training cases
 ```
 #flash attention
-pip install flash-attn --no-build-isolation
+python3 -m pip install flash-attn --no-build-isolation
 #for xformer: https://github.com/facebookresearch/xformers?tab=readme-ov-file#installing-xformers
 ```
 
 ## LaVy Weights
 ```
 #save directory
-mkdir checkpoints
+mkdir ./checkpoints
 #download weights
 huggingface-cli download Viet-Mistral/Vistral-7B-Chat --local-dir ./checkpoints
 huggingface-cli download chitb/LaVy-pretrain --local-dir ./checkpoints
@@ -42,7 +42,7 @@ huggingface-cli download chitb/LaVy-instruct --local-dir ./checkpoints
 ### Quickstart Inference 
 
 ```
-python ./llava/eval/run_llava.py --model_base path_to_Vistral7b --model_path path_to_LaVy-instruct --model_name "llava_lora" --conv_mode "mistral_instruct" --image-file "./images/006.jpg" --query "Bạn có biết ai vẽ bức tranh này?"
+python ./llava/eval/run_llava.py --model_base path_to_Vistral-7B --model_path path_to_LaVy-Instruct --model_name "llava_lora" --conv_mode "mistral_instruct" --image-file "./images/006.jpg" --query "Bạn có biết ai vẽ bức tranh này?"
 ```
 ![image](https://github.com/baochi0212/LaVy/assets/77192945/c235c99c-df45-49da-8d11-e1ba3f4441b4)
 
