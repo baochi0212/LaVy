@@ -93,8 +93,8 @@ huggingface-cli download chitb/LaVy-instruct --local-dir ./checkpoints
 
 ### Train
 
-1. Prepare data & config
-   Set up data & configuration in files in ./scripts 
+1. Prepare
+   Set up data & configuration in files in ./scripts, for more information [LlaVA](https://github.com/haotian-liu/LLaVA)
 
 3. Start training
    ```
