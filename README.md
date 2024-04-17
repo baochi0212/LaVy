@@ -13,7 +13,7 @@
 1. Clone this repository and navigate to LLaVA folder
 ```bash
 git clone https://github.com/baochi0212/LaVy
-cd LLaVA
+cd ./LaVy
 ```
 
 2. Install Package
