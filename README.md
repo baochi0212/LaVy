@@ -109,7 +109,7 @@ bash ./eval_scripts/test_benchmark.sh $file_name $model_path $model_base $output
 
 If you find LLaVA useful for your research and applications, please cite using this BibTeX:
 ```bibtex
-@misc{lavy,
+@article{lavy,
       title={LaVy: Vietnamese Multimodal Large Language Model}, 
       author={Chi Tran and Huong Le Thanh},
       publisher={arXiv preprint arXiv:2404.07922},
