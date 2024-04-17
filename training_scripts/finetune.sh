@@ -31,4 +31,4 @@
     --gradient_checkpointing True \
     --dataloader_num_workers 2 \
     --lazy_preprocess True \
-    --report_to "tensorboard"'
+    --report_to "tensorboard"
