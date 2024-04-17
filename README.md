@@ -30,55 +30,8 @@ python3 -m pip install -e .
 ```
 #flash attention
 pip install flash-attn --no-build-isolation
-#for xformer: https://github.com/facebookresearch/xformers?tab=readme-ov-file#installing-xformers
+#for xformer: [Xformer install](https://github.com/facebookresearch/xformers?tab=readme-ov-file#installing-xformers)
 ```
-
-
-### Quick Start With HuggingFace
-
-<details>
-<summary>Example Code</summary>
-
-```Python
-from llava.model.builder import load_pretrained_model
-from llava.mm_utils import get_model_name_from_path
-from llava.eval.run_llava import eval_model
-
-model_path = "liuhaotian/llava-v1.5-7b"
-
-tokenizer, model, image_processor, context_len = load_pretrained_model(
-    model_path=model_path,
-    model_base=None,
-    model_name=get_model_name_from_path(model_path)
-)
-```
-
-Check out the details wth the `load_pretrained_model` function in `llava/model/builder.py`.
-
-You can also use the `eval_model` function in `llava/eval/run_llava.py` to get the output easily. By doing so, you can use this code on Colab directly after downloading this repository.
-
-``` python
-model_path = "liuhaotian/llava-v1.5-7b"
-prompt = "What are the things I should be cautious about when I visit here?"
-image_file = "https://llava-vl.github.io/static/images/view.jpg"
-
-args = type('Args', (), {
-    "model_path": model_path,
-    "model_base": None,
-    "model_name": get_model_name_from_path(model_path),
-    "query": prompt,
-    "conv_mode": None,
-    "image_file": image_file,
-    "sep": ",",
-    "temperature": 0,
-    "top_p": None,
-    "num_beams": 1,
-    "max_new_tokens": 512
-})()
-
-eval_model(args)
-```
-</details>
 
 ## LaVy Weights
 ```
@@ -89,7 +42,11 @@ huggingface-cli download Viet-Mistral/Vistral-7B-Chat --local-dir ./checkpoints
 huggingface-cli download chitb/LaVy-pretrain --local-dir ./checkpoints
 huggingface-cli download chitb/LaVy-instruct --local-dir ./checkpoints
 ```
+### Quickstart Inference 
 
+```
+python ./llava/eval/run_llava.py --model_base path_to_Vistral7b --model_path path_to_LaVy-instruct --model_name "llava_lora" --conv_mode "mistral_instruct" --image-file "./images/006.jpg" --query "Bạn có biết ai vẽ bức tranh này?"
+```
 
 ### Train
 
