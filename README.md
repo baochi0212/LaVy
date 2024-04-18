@@ -59,6 +59,7 @@ Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi ti
 ### Train
 
 1. Prepare
+   
    Set up data & configuration in files in ./scripts, for more information [LlaVA](https://github.com/haotian-liu/LLaVA)
 
 3. Start training
@@ -108,7 +109,7 @@ bash ./eval_scripts/test_benchmark.sh $file_name $model_path $model_base $output
 
 ## Citation
 
-If you find LLaVA useful for your research and applications, please cite using this BibTeX:
+If you find our project useful for your research and applications, please cite using this BibTeX:
 ```bibtex
 @article{lavy,
       title={LaVy: Vietnamese Multimodal Large Language Model}, 
