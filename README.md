@@ -76,7 +76,7 @@ Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi ti
 
    Our Gemini Pro prompts for evaluation:
    
-   OpenViVQA:
+   OpenViVQA prompt
     ```
     {
     "Question": "sản phẩm của đào tiên được làm tại đâu ?",
@@ -87,7 +87,7 @@ Bức tranh này được vẽ bởi Leonardo da Vinci, một họa sĩ nổi ti
     "Status": "success"
     }
     ```
-    In the wild
+    In the wild prompt
     ```
     {
     "Category": "conv",
